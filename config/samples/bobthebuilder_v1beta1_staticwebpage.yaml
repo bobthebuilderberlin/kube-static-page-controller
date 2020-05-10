@@ -1,0 +1,7 @@
+apiVersion: bobthebuilder.my.domain/v1beta1
+kind: StaticWebpage
+metadata:
+  name: staticwebpage-sample
+spec:
+  # Add fields here
+  foo: bar

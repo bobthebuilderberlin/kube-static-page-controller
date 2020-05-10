@@ -1,0 +1,24 @@
+# permissions for end users to edit staticwebpages.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: staticwebpage-editor-role
+rules:
+- apiGroups:
+  - bobthebuilder.my.domain
+  resources:
+  - staticwebpages
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - bobthebuilder.my.domain
+  resources:
+  - staticwebpages/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+domain: my.domain
+repo: github.com/bobthebuilderberlin/kube-static-page-controller
+resources:
+- group: bobthebuilder
+  kind: StaticWebpage
+  version: v1beta1
+version: "2"
